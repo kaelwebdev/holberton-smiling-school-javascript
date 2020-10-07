@@ -32,21 +32,23 @@ $(document).ready(function () {
 	}
 	
 	function getQuotes() {
-		let r = new XMLHttpRequest();
-		r.open("GET", "https://smileschool-api.hbtn.info/quotes", true);
-		r.onreadystatechange = ()  => {
-			if(r.readyState === r.DONE) {
-				if(r.status === 200) {
-					let list = JSON.parse(r.responseText);
-					receiveQuotes(list);
-				}
-				else {
-					const error = new Error('Error');
-					return error
-				}
+		$.ajax({
+			type: "GET",
+			url: "https://smileschool-api.hbtn.info/quotes",
+			data: "",
+			beforeSend: function() {
+				$("#loader_icon").show(1000);
+			},
+			success: function(r) {
+				$("#loader_icon").hide(1000);
+				receiveQuotes(r);
 			}
-		}
-		r.send();
+		});
+
+		/*
+			https://stackoverflow.com/questions/11515994/display-ajax-loader-before-load-data
+			https://www.w3schools.com/howto/howto_css_loader.asp
+		*/
 	}
 	
 	getQuotes();
