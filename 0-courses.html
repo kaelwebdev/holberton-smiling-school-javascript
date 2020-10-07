@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+
+	<link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./holberton_school-icon/style.css">
+	<link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+	<section class="welcome_section_v3">
+		<header class="first_header">
+			<nav class="navbar navbar-expand-sm navbar-light">
+				<button class="navbar-toggler border-0" type="button" data-toggle="collapse"
+					data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand d-none d-sm-flex m-0" href="./homepage.html"><img src="./images/logo_nav_v3.png"
+						alt="" width=""></a>
+				<a class="navbar-brand d-block d-sm-none m-0 ml-n5" href="./homepage.html"><img
+						src="./images/logo_nav_v2.png" alt="" width=""></a>
+				<div class="d-block d-sm-none"></div>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav d-flex d-block d-sm-none form-inline mx-auto">
+						<li class="nav-item active">
+							<a class="nav-link text-white" href="./courses.html">COURSES <span
+									class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="./pricing.html">PRECING</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="./login.html">LOGIN</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav d-none d-sm-flex justify-content-end w-100">
+						<li class="nav-item active mr-4">
+							<a class="nav-link text-white" href="./courses.html">COURSES <span
+									class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item mr-4">
+							<a class="nav-link text-white" href="./pricing.html">PRECING</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="./login.html">LOGIN</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div class="text-center text-white pb-5 phrase__content">
+			<p>« Don’t cry because it’s over.
+				<span class="text-color1">Smile</span> because it happened. »
+			</p>
+		</div>
+	</section>
+	<section class="searchbar_section bg-color1 py-5">
+
+		<form class="">
+
+			<div class="row m-0">
+
+				<div class="col-12 col-sm-12 col-md-4 mt-3">
+					<label for="Search" class="text-white"> KEYWORDS</label>
+					<div class="d-flex align-items-center">
+						<span
+							class="holberton_school-icon-search_1 search_icon text-white text-center align-middle mr-1 d-flex align-items-center"></span>
+						<input class="form-control" type="text" placeholder="Search by keywords" aria-label="Search">
+					</div>
+
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 mt-3">
+					<label for="dropdownMenuButton" class="text-white">TOPIC</label>
+					<div class="dropdown">
+						<button class="btn dropdown-toggle d-flex align-items-center" type="button"
+							id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Novice
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item" href="#">Novice</a>
+							<a class="dropdown-item" href="#">Intermediate</a>
+							<a class="dropdown-item" href="#">Expert</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 mt-3">
+					<div class="dropdown">
+						<label for="dropdownMenuButton2" class="text-white">SORT BY</label>
+						<button class="btn dropdown-toggle d-flex align-items-center" type="button"
+							id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Most Popular
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+							<a class="dropdown-item " href="#">Most Popular</a>
+							<a class="dropdown-item" href="#">Most Recent</a>
+							<a class="dropdown-item" href="#">Most Viwed</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</section>
+	<section class="cards_section bg-white py-5">
+
+		<div class="n_videos pb-2">
+			11 videos
+		</div>
+
+		<div class="grid_cards d-flex flex-wrap justify-content-center align-items-center mx-auto">
+
+			<div class="card mr-3 mb-3">
+				<div class=" d-flex align-items-center justify-content-center">
+					<img src="./images/thumbnail_4.jpg" alt="" class="card-img-top" />
+					<img src="./images/play.png" alt="" class="position-absolute w-33" />
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Diagonal Smile</h5>
+					<p class="card-text">
+						Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+					</p>
+					<div class="d-flex align-items-center">
+						<div class="mr-3">
+							<img src="./images/profile_1.jpg" alt="" class="card_img_user rounded-circle">
+						</div>
+						<div class="card_name_user text-color1">
+							Phillip Massey
+						</div>
+					</div>
+					<div class="d-flex justify-content-between mt-3 align-items-center">
+						<div class="">
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_off.png" alt="" class="star" />
+						</div>
+						<div class="text-color1 card__time">
+							8 min
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card mr-3 mb-3">
+				<div class=" d-flex align-items-center justify-content-center">
+					<img src="./images/thumbnail_3.jpg" alt="" class="card-img-top" />
+					<img src="./images/play.png" alt="" class="position-absolute w-33" />
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Sad Smile</h5>
+					<p class="card-text">
+						Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+					</p>
+					<div class="d-flex align-items-center">
+						<div class="mr-3">
+							<img src="./images/profile_1.jpg" alt="" class="card_img_user rounded-circle">
+						</div>
+						<div class="card_name_user text-color1">
+							Phillip Massey
+						</div>
+					</div>
+					<div class="d-flex justify-content-between mt-3 align-items-center">
+						<div class="">
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_off.png" alt="" class="star" />
+						</div>
+						<div class="text-color1 card__time">
+							8 min
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card mr-3 mb-3">
+				<div class=" d-flex align-items-center justify-content-center">
+					<img src="./images/thumbnail_1.jpg" alt="" class="card-img-top" />
+					<img src="./images/play.png" alt="" class="position-absolute w-33" />
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Natural Smile</h5>
+					<p class="card-text">
+						Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+					</p>
+					<div class="d-flex align-items-center">
+						<div class="mr-3">
+							<img src="./images/profile_1.jpg" alt="" class="card_img_user rounded-circle">
+						</div>
+						<div class="card_name_user text-color1">
+							Phillip Massey
+						</div>
+					</div>
+					<div class="d-flex justify-content-between mt-3 align-items-center">
+						<div class="">
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_off.png" alt="" class="star" />
+						</div>
+						<div class="text-color1 card__time">
+							8 min
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card mr-3 mb-3">
+				<div class=" d-flex align-items-center justify-content-center">
+					<img src="./images/thumbnail_2.jpg" alt="" class="card-img-top" />
+					<img src="./images/play.png" alt="" class="position-absolute w-33" />
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Happy Smile</h5>
+					<p class="card-text">
+						Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+					</p>
+					<div class="d-flex align-items-center">
+						<div class="mr-3">
+							<img src="./images/profile_1.jpg" alt="" class="card_img_user rounded-circle">
+						</div>
+						<div class="card_name_user text-color1">
+							Phillip Massey
+						</div>
+					</div>
+					<div class="d-flex justify-content-between mt-3 align-items-center">
+						<div class="">
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_off.png" alt="" class="star" />
+						</div>
+						<div class="text-color1 card__time">
+							8 min
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card mr-3 mb-3">
+				<div class=" d-flex align-items-center justify-content-center">
+					<img src="./images/thumbnail_4.jpg" alt="" class="card-img-top" />
+					<img src="./images/play.png" alt="" class="position-absolute w-33" />
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Diagonal Smile</h5>
+					<p class="card-text">
+						Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+					</p>
+					<div class="d-flex align-items-center">
+						<div class="mr-3">
+							<img src="./images/profile_1.jpg" alt="" class="card_img_user rounded-circle">
+						</div>
+						<div class="card_name_user text-color1">
+							Phillip Massey
+						</div>
+					</div>
+					<div class="d-flex justify-content-between mt-3 align-items-center">
+						<div class="">
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_off.png" alt="" class="star" />
+						</div>
+						<div class="text-color1 card__time">
+							8 min
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card mr-3 mb-3">
+				<div class=" d-flex align-items-center justify-content-center">
+					<img src="./images/thumbnail_3.jpg" alt="" class="card-img-top" />
+					<img src="./images/play.png" alt="" class="position-absolute w-33" />
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Sad Smile</h5>
+					<p class="card-text">
+						Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+					</p>
+					<div class="d-flex align-items-center">
+						<div class="mr-3">
+							<img src="./images/profile_1.jpg" alt="" class="card_img_user rounded-circle">
+						</div>
+						<div class="card_name_user text-color1">
+							Phillip Massey
+						</div>
+					</div>
+					<div class="d-flex justify-content-between mt-3 align-items-center">
+						<div class="">
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_off.png" alt="" class="star" />
+						</div>
+						<div class="text-color1 card__time">
+							8 min
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card mr-3 mb-3">
+				<div class=" d-flex align-items-center justify-content-center">
+					<img src="./images/thumbnail_1.jpg" alt="" class="card-img-top" />
+					<img src="./images/play.png" alt="" class="position-absolute w-33" />
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Natural Smile</h5>
+					<p class="card-text">
+						Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+					</p>
+					<div class="d-flex align-items-center">
+						<div class="mr-3">
+							<img src="./images/profile_1.jpg" alt="" class="card_img_user rounded-circle">
+						</div>
+						<div class="card_name_user text-color1">
+							Phillip Massey
+						</div>
+					</div>
+					<div class="d-flex justify-content-between mt-3 align-items-center">
+						<div class="">
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_off.png" alt="" class="star" />
+						</div>
+						<div class="text-color1 card__time">
+							8 min
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card mr-3 mb-3">
+				<div class=" d-flex align-items-center justify-content-center">
+					<img src="./images/thumbnail_2.jpg" alt="" class="card-img-top" />
+					<img src="./images/play.png" alt="" class="position-absolute w-33" />
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Happy Smile</h5>
+					<p class="card-text">
+						Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+					</p>
+					<div class="d-flex align-items-center">
+						<div class="mr-3">
+							<img src="./images/profile_1.jpg" alt="" class="card_img_user rounded-circle">
+						</div>
+						<div class="card_name_user text-color1">
+							Phillip Massey
+						</div>
+					</div>
+					<div class="d-flex justify-content-between mt-3 align-items-center">
+						<div class="">
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_off.png" alt="" class="star" />
+						</div>
+						<div class="text-color1 card__time">
+							8 min
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card mr-3 mb-3">
+				<div class=" d-flex align-items-center justify-content-center">
+					<img src="./images/thumbnail_4.jpg" alt="" class="card-img-top" />
+					<img src="./images/play.png" alt="" class="position-absolute w-33" />
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Diagonal Smile</h5>
+					<p class="card-text">
+						Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+					</p>
+					<div class="d-flex align-items-center">
+						<div class="mr-3">
+							<img src="./images/profile_1.jpg" alt="" class="card_img_user rounded-circle">
+						</div>
+						<div class="card_name_user text-color1">
+							Phillip Massey
+						</div>
+					</div>
+					<div class="d-flex justify-content-between mt-3 align-items-center">
+						<div class="">
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_off.png" alt="" class="star" />
+						</div>
+						<div class="text-color1 card__time">
+							8 min
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card mr-3 mb-3">
+				<div class=" d-flex align-items-center justify-content-center">
+					<img src="./images/thumbnail_3.jpg" alt="" class="card-img-top" />
+					<img src="./images/play.png" alt="" class="position-absolute w-33" />
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Sad Smile</h5>
+					<p class="card-text">
+						Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+					</p>
+					<div class="d-flex align-items-center">
+						<div class="mr-3">
+							<img src="./images/profile_1.jpg" alt="" class="card_img_user rounded-circle">
+						</div>
+						<div class="card_name_user text-color1">
+							Phillip Massey
+						</div>
+					</div>
+					<div class="d-flex justify-content-between mt-3 align-items-center">
+						<div class="">
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_off.png" alt="" class="star" />
+						</div>
+						<div class="text-color1 card__time">
+							8 min
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card mb-3">
+				<div class=" d-flex align-items-center justify-content-center">
+					<img src="./images/thumbnail_1.jpg" alt="" class="card-img-top" />
+					<img src="./images/play.png" alt="" class="position-absolute w-33" />
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Natural Smile</h5>
+					<p class="card-text">
+						Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+					</p>
+					<div class="d-flex align-items-center">
+						<div class="mr-3">
+							<img src="./images/profile_1.jpg" alt="" class="card_img_user rounded-circle">
+						</div>
+						<div class="card_name_user text-color1">
+							Phillip Massey
+						</div>
+					</div>
+					<div class="d-flex justify-content-between mt-3 align-items-center">
+						<div class="">
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_on.png" alt="" class="star" />
+							<img src="./images/star_off.png" alt="" class="star" />
+						</div>
+						<div class="text-color1 card__time">
+							8 min
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer bg-color3 text-white py-5">
+		<div class="d-flex justify-content-around pt-5 footer__content1">
+			<div class="footer__logo">
+				<a href="" class="header_logo__link">
+					<img class="header_logo__img" 
+						src="./images/logo_nav_v3.png"
+						alt="Techium logo">
+				</a>
+			</div>
+			<div class="footer__icons d-flex justify-content-between  align-items-center">
+				<span class="footer__icon holberton_school-icon-ic_facebook"></span>
+				<span class="footer__icon holberton_school-icon-ic_twitter"></span>
+				<span class="footer__icon holberton_school-icon-ic_instagram"></span>
+			</div>
+		</div>
+		<div class="footer__content2 text-center pt-5">
+			<div class="footer__copyright">
+				<span>©smileschool 2020</span>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
